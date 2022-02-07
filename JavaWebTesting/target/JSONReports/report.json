@@ -1,0 +1,597 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.511Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters a text in search box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user is navigated to search results",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.609Z",
+        "line": 3,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "open url to login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "users click on login",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is navigated to the home screen",
+            "match": {
+              "location": "StepDefinitions.register.user_is_navigated_to_the_home_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginDemo.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.624Z",
+        "line": 6,
+        "name": "Check register is successful with valid phone number credentials",
+        "description": "",
+        "id": "test-register-functionality;check-register-is-successful-with-valid-phone-number-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService.\u003cinit\u003e(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver$FakeDriverService.\u003cinit\u003e(ChromeDriver.java:989)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:916)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:880)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:726)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:74)\r\n\tat StepDefinitions.register.open_url_to_bukalapak_website(register.java:34)\r\n\tat ✽.open url to bukalapak website(file:///D:/Documents/QA%20Jobs/Test%20BL/JavaWebTestingBukalapak/JavaWebTesting/src/test/resources/Features/Register.feature:7)\r\n",
+              "duration": 44198000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "open url to bukalapak website",
+            "match": {
+              "location": "StepDefinitions.register.open_url_to_bukalapak_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click register button",
+            "match": {
+              "location": "StepDefinitions.register.user_click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters phone number",
+            "match": {
+              "location": "StepDefinitions.register.user_enters_phone_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "users click on register button",
+            "match": {
+              "location": "StepDefinitions.register.users_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user confirmation on SMS OTP code",
+            "match": {
+              "location": "StepDefinitions.register.user_confirmation_on_SMS_OTP_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user is navigated to the home screen",
+            "match": {
+              "location": "StepDefinitions.register.user_is_navigated_to_the_home_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Register"
+          },
+          {
+            "name": "@Valid"
+          }
+        ]
+      }
+    ],
+    "name": "Test register functionality",
+    "description": "",
+    "id": "test-register-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Register.feature",
+    "tags": [
+      {
+        "name": "@Register",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.719Z",
+        "line": 24,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I want to write a step with precondition",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "some other precondition",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "I complete action",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "some other action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "yet another action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I validate the outcomes",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "check more outcomes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-07T09:39:30.824Z",
+        "line": 41,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario-outline;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "I want to write a step with name1",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "I check for the 5 in step",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "I verify the success in step",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-07T09:39:30.847Z",
+        "line": 42,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario-outline;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "I want to write a step with name2",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "I check for the 7 in step",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "I verify the Fail in step",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/dsa.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.870Z",
+        "line": 9,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user is on login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user enters username and password",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "cliks on login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user is navigated to the home screen",
+            "match": {
+              "location": "StepDefinitions.register.user_is_navigated_to_the_home_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeFeature"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "feature to login functionality",
+    "description": "",
+    "id": "feature-to-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": [
+      {
+        "name": "@SmokeFeature",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T09:39:30.887Z",
+        "line": 6,
+        "name": "Check register is successful with valid phone number credentials",
+        "description": "",
+        "id": "test-register-functionality;check-register-is-successful-with-valid-phone-number-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService.\u003cinit\u003e(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver$FakeDriverService.\u003cinit\u003e(ChromeDriver.java:989)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:916)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:880)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:726)\r\n\tat io.testproject.sdk.drivers.web.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:74)\r\n\tat StepDefinitions.register.open_url_to_bukalapak_website(register.java:34)\r\n\tat ✽.open url to bukalapak website(file:///D:/Documents/QA%20Jobs/Test%20BL/JavaWebTestingBukalapak/JavaWebTesting/src/test/resources/Features/register/Register.feature:7)\r\n",
+              "duration": 1995600,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "open url to bukalapak website",
+            "match": {
+              "location": "StepDefinitions.register.open_url_to_bukalapak_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click register button",
+            "match": {
+              "location": "StepDefinitions.register.user_click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters phone number",
+            "match": {
+              "location": "StepDefinitions.register.user_enters_phone_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "users click on register button",
+            "match": {
+              "location": "StepDefinitions.register.users_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user confirmation on SMS OTP code",
+            "match": {
+              "location": "StepDefinitions.register.user_confirmation_on_SMS_OTP_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 527400,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user is navigated to the home screen",
+            "match": {
+              "location": "StepDefinitions.register.user_is_navigated_to_the_home_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Test register functionality",
+    "description": "",
+    "id": "test-register-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/register/Register.feature",
+    "tags": []
+  }
+]

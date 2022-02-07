@@ -1,0 +1,42 @@
+
+@tag
+Feature: Test register functionality
+
+  @tag
+   Scenario: Check register is successful with valid phone number credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters phone number
+    And users click on register button
+    And user confirmation on SMS OTP code
+    Then user is navigated to the home screen
+
+ //@tag2
+  Scenario: Check register is successful with valid email credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters email
+    And users click on register button
+    And user confirmation on Email OTP code
+    Then user is navigated to the home screen
+
+ //@tag3
+  Scenario: Check register is successful with valid gmail credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters confrimation to google email
+    And users click on next button
+    And user enters confrimation to gmail password
+    And users click on login button
+    Then user is navigated to the home screen
+ 
+ @tag4
+   Scenario: Check register is successful with valid facebook credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters confrimation to facebook email
+    And user enters confrimation to facebook password
+    And users click on login button
+    Then user is navigated to the home screen
+    
+    

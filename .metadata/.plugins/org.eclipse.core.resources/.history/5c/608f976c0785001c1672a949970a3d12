@@ -1,0 +1,57 @@
+package StepDefinitions;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
+import io.cucumber.java.en.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import javax.management.MalformedObjectNameException;
+import io.testproject.sdk.DriverBuilder;
+import io.testproject.sdk.drivers.web.ChromeDriver;
+
+public class Login {
+//	
+//	ChromeDriver driver = null;
+//	
+//	@Given("open url to login page")
+//	public void open_url_to_login_page() throws MalformedObjectNameException, MalformedURLException {
+//		
+//					  driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
+//					  .withRemoteAddress(new URL("http://localhost:8585"))
+//					  .withToken("Ot21OIOirHt1gt1NJGLMHVBxig7uMiWribV42T8U9Xc1").build(ChromeDriver.class);
+//					
+//		driver.navigate().to("https://example.testproject.io/web/");
+//	}
+//
+//	@Given("user enters username and password")
+//	public void user_enters_username_and_password(){
+//		
+//		driver.findElement(By.id("name")).sendKeys("John Smith");
+//		driver.findElement(By.id("password")).sendKeys("12345");
+//		driver.findElement(By.id("login")).click();
+//		
+//	}
+//	@When("users click on login")
+//	public void users_click_on_login() {
+//		
+//		driver.findElement(By.id("login")).click();
+//		
+//	}
+//	
+//	@Then("user is navigated to the home page")
+//	public void user_is_navigated_to_the_home_page() {
+//		
+//		 boolean passed = driver.findElement(By.cssSelector("#logout")).isDisplayed();
+//	    
+//		 if (passed) {
+//	            System.out.println("Test Passed");
+//	        } else {
+//	            System.out.println("Test Failed");
+//	        }
+//		 
+//		
+//		driver.quit();
+//		
+//	}
+}

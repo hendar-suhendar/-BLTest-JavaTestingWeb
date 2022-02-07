@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="6" tests="8" time="0.888">
+    <testcase classname="feature to test google search functionality" name="Validate google search is working" time="0.076">
+        <skipped>
+            <![CDATA[Given browser is open.......................................................undefined
+And user is on google search page...........................................undefined
+When user enters a text in search box.......................................undefined
+Then user is navigated to search results....................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="Test login functionality" name="Check login is successful with valid credentials" time="0.01">
+        <skipped>
+            <![CDATA[Given open url to login page................................................undefined
+When user enters username and password......................................undefined
+And users click on login....................................................undefined
+Then user is navigated to the home screen...................................skipped
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="Test register functionality" name="Check register is successful with valid phone number credentials" time="0.056">
+        <failure message="org.openqa.selenium.chrome.ChromeDriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V" type="java.lang.NoSuchMethodError">
+            <![CDATA[Given open url to bukalapak website.........................................failed
+And user click register button..............................................skipped
+When user enters phone number...............................................skipped
+And users click on register button..........................................skipped
+And user confirmation on SMS OTP code.......................................skipped
+Then user is navigated to the home screen...................................skipped
+
+StackTrace:
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at io.testproject.sdk.drivers.web.ChromeDriver$FakeDriverService.<init>(ChromeDriver.java:989)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:916)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:880)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:726)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:74)
+	at StepDefinitions.register.open_url_to_bukalapak_website(register.java:34)
+	at ✽.open url to bukalapak website(file:///D:/Documents/QA%20Jobs/Test%20BL/JavaWebTestingBukalapak/JavaWebTesting/src/test/resources/Features/Register.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Title of your feature" name="Title of your scenario" time="0.037">
+        <skipped>
+            <![CDATA[Given I want to write a step with precondition..............................undefined
+And some other precondition.................................................undefined
+When I complete action......................................................undefined
+And some other action.......................................................undefined
+And yet another action......................................................undefined
+Then I validate the outcomes................................................undefined
+And check more outcomes.....................................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="Title of your feature" name="Title of your scenario outline" time="0.009">
+        <skipped>
+            <![CDATA[Given I want to write a step with name1.....................................undefined
+When I check for the 5 in step..............................................undefined
+Then I verify the success in step...........................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.016">
+        <skipped>
+            <![CDATA[Given I want to write a step with name2.....................................undefined
+When I check for the 7 in step..............................................undefined
+Then I verify the Fail in step..............................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="feature to login functionality" name="Check login is successful with valid credentials" time="0.009">
+        <skipped>
+            <![CDATA[Given user is on login page.................................................undefined
+When user enters username and password......................................undefined
+And cliks on login button...................................................undefined
+Then user is navigated to the home screen...................................skipped
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="Test register functionality" name="Check register is successful with valid phone number credentials" time="0.023">
+        <failure message="org.openqa.selenium.chrome.ChromeDriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V" type="java.lang.NoSuchMethodError">
+            <![CDATA[Given open url to bukalapak website.........................................failed
+And user click register button..............................................skipped
+When user enters phone number...............................................skipped
+And users click on register button..........................................skipped
+And user confirmation on SMS OTP code.......................................skipped
+Then user is navigated to the home screen...................................skipped
+
+StackTrace:
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at io.testproject.sdk.drivers.web.ChromeDriver$FakeDriverService.<init>(ChromeDriver.java:989)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:916)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:880)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:726)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:74)
+	at StepDefinitions.register.open_url_to_bukalapak_website(register.java:34)
+	at ✽.open url to bukalapak website(file:///D:/Documents/QA%20Jobs/Test%20BL/JavaWebTestingBukalapak/JavaWebTesting/src/test/resources/Features/register/Register.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

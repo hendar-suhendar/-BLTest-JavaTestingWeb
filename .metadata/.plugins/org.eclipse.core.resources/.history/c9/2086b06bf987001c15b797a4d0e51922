@@ -1,0 +1,12 @@
+
+@Register
+Feature: Test register functionality
+
+  @Valid
+   Scenario: Check register is successful with valid phone number credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters phone number
+    And users click on register button
+    And user confirmation on SMS OTP code
+    Then user is navigated to the home screen

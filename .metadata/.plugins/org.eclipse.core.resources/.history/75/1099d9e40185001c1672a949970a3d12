@@ -1,0 +1,58 @@
+package StepDefinitions;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.java.en.*;
+import io.testproject.sdk.DriverBuilder;
+import io.testproject.sdk.drivers.web.ChromeDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import javax.management.MalformedObjectNameException;
+
+public class Login {
+	
+	ChromeDriver driver = null;
+	
+	@Given("open url to login page")
+	public void browser_is_open() throws MalformedObjectNameException, MalformedURLException {
+		
+					  driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
+					  .withRemoteAddress(new URL("dddd"))
+					  .withToken("Ot21OIOirHt1gt1NJGLMHVBxig7uMiWribV42T8U9Xc1").build(ChromeDriver.class);
+					
+		driver.navigate().to("https://example.testproject.io/web/");
+	}
+
+	@Given("user enters username and password")
+	public void user_enters_username_and_password() throws InterruptedException {
+		
+		driver.findElement(By.id("name")).sendKeys("myns.suhendar@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("abcABC123#@!");
+		driver.findElement(By.id("login")).click();
+		
+	}
+	@When("users click on login")
+	public void users_click_on_login() throws InterruptedException {
+		
+		driver.findElement(By.id("login-btn")).click();
+		
+	}
+	
+	@Then("user is navigated to the home page")
+	public void user_is_navigated_to_the_home_page() {
+		String ExpectedValue = "Which product would you like to use?";
+		String actualValue = driver.findElement(By.className("title_solution_Detail")).getText();
+	
+		driver.close();
+		driver.quit();
+		
+	}
+}

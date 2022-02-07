@@ -1,0 +1,28 @@
+
+@TS_Register
+Feature: Test register functionality
+
+  @TC_Positif_01
+   Scenario Outline: Check register is successful with valid phone number credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enter <phone number>
+    And user click on register button
+    And user confirmation on SMS OTP code
+    Then user is navigated to the home screen 
+    
+	Examples: 
+      | phone number |
+      |085800000000  |
+      
+	 @TC_Positif_02
+  Scenario Outline: Check register is successful with valid email credentials
+    Given open url to bukalapak website
+    And user click register button
+    When user enters <email>
+    And users click on register button
+    And user confirmation on Email OTP code
+    Then user is navigated to the home screen
+   	Examples: 
+      | phone number 								 |
+      |automation.testing@gmail.com  |

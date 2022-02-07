@@ -1,0 +1,71 @@
+package StepDefinitions;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.java.en.*;
+import io.testproject.sdk.DriverBuilder;
+import io.testproject.sdk.drivers.web.ChromeDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import javax.management.MalformedObjectNameException;
+
+public class Login {
+	
+	ChromeDriver driver = null;
+	
+	@Given("browser is open")
+	public void browser_is_open() throws MalformedObjectNameException {
+		
+		           try {
+					driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
+					  .withRemoteAddress(new URL(""))
+					  .withToken("").build(ChromeDriver.class);
+				} catch (MalformedURLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		
+		driver.navigate().to("https://www.katalon.com/");
+	}
+
+	@And("user is on login page")
+	public void user_is_on_login_page() {
+		
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		driver.findElement(By.xpath("//*[@id=\"page-top\"]/nav/div/div[2]/ul/li[3]/a")).click();
+	    
+	}
+
+	@When("user enters username and password")
+	public void user_enters_username_and_password() throws InterruptedException {
+		
+		driver.findElement(By.id("user_email_login")).sendKeys("myns.suhendar@gmail.com");
+		driver.findElement(By.id("user_pass_login")).sendKeys("abcABC123#@!");
+		driver.findElement(By.id("login-btn")).click();
+		
+	}
+	@When("users click on login")
+	public void users_click_on_login() throws InterruptedException {
+		
+		driver.findElement(By.id("login-btn")).click();
+		
+	}
+	
+	@Then("user is navigated to the home page")
+	public void user_is_navigated_to_the_home_page() {
+		String ExpectedValue = "Which product would you like to use?";
+		String actualValue = driver.findElement(By.className("title_solution_Detail")).getText();
+	
+		driver.close();
+		driver.quit();
+		
+	}
+}

@@ -1,0 +1,65 @@
+package StepDefinitions;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.cucumber.java.en.*;
+
+public class LoginDemoSteps {
+	
+	WebDriver driver = null;
+	/*
+	 * @Given("browser is open") public void browser_is_open() {
+	 * 
+	 * String projectPath = System.getProperty("user.dir");
+	 * System.out.println("Project path is:"+projectPath);
+	 * 
+	 * System.setProperty("webdriver.chrome.driver",projectPath+
+	 * "/src/test/resources/drivers/chromedriver.exe");
+	 * 
+	 * driver = new ChromeDriver(); driver.manage().timeouts().implicitlyWait(40,
+	 * TimeUnit.SECONDS); driver.manage().timeouts().pageLoadTimeout(40,
+	 * TimeUnit.SECONDS);
+	 * 
+	 * driver.manage().window().maximize();
+	 * driver.navigate().to("https://www.katalon.com/"); }
+	 * 
+	 * @And("user is on login page") public void userLoginPage() {
+	 * 
+	 * driver.findElement(By.id("//*[@id=\"page-top\"]/nav/div/div[2]/ul/li[3]/a")).
+	 * click();
+	 * 
+	 * }
+	 * 
+	 * @When("user enters username and password") public void
+	 * user_enters_username_and_password() throws InterruptedException {
+	 * 
+	 * driver.findElement(By.id("user_email_login")).sendKeys(
+	 * "myns.suhendar@gmail.com");
+	 * driver.findElement(By.id("user_pass_login")).sendKeys("abcABC123#@!");
+	 * driver.findElement(By.id("login-btn")).click();
+	 * 
+	 * }
+	 * 
+	 * @When("user click on login") public void user_click_on_login() throws
+	 * InterruptedException {
+	 * 
+	 * driver.findElement(By.id("login-btn")).click();
+	 * 
+	 * }
+	 * 
+	 * @Then("user is navigated to the home page") public void
+	 * user_is_navigated_to_the_home_page() { String ExpectedValue =
+	 * "Which product would you like to use?"; String actualValue =
+	 * driver.findElement(By.className("title_solution_Detail")).getText();
+	 * assertEquals(actualValue, ExpectedValue); driver.close(); driver.quit();
+	 * 
+	 * }
+	 */
+}
